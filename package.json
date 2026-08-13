@@ -1,17 +1,18 @@
 {
-  "name": "streamtape-video-fetcher",
+  "name": "streamtape-api",
   "version": "1.0.0",
-  "description": "A Node.js server that fetches and stores Streamtape video data (name, download link, thumbnail) every 2 hours and serves it to the frontend.",
-  "main": "server.js",
+  "description": "Streamtape video links API",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "24.x"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "axios": "^0.21.1",
-    "node-cron": "^2.0.3",
-    "cors": "^2.8.5"
-  },
-  "author": "Your Name",
-  "license": "ISC"
+    "axios": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.0.0",
+    "node-cron": "^4.0.0"
+  }
 }

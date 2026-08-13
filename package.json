@@ -2,7 +2,7 @@
   "name": "streamtape-api",
   "version": "1.0.0",
   "description": "Streamtape video links API",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node index.js"
   },

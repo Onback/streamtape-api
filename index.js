@@ -18,8 +18,8 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 // Function to fetch video download links and thumbnails
 const fetchVideoData = async () => {
     try {
-        const login = '0287aca2ef38b0d9a210'; // Your Streamtape login
-        const key = 'k2ljGZWXMKirrK';         // Your Streamtape API key
+        const login = process.env.STREAMTAPE_LOGIN; // Your Streamtape login
+        const key = process.env.STREAMTAPE_KEY;         // Your Streamtape API key
 
         // First API: Get the list of all video IDs and names
         const videoListResponse = await axios.get(`https://api.streamtape.com/file/listfolder?login=${login}&key=${key}`);
